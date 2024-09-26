@@ -1,0 +1,262 @@
+<html>
+    <title>Login Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<head>
+<style>
+    body{
+        background-color: rgb(216, 203, 213);
+    }
+    .navbar-brand{
+        font-size: 30px;
+        padding-right: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 2px;
+    }
+    .hero{
+        background-image:url("img.jfif");
+        background-image: transparent;
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutus{
+  font-weight: 800;
+  font-size: 30px;
+  color: cornsilk;
+
+}
+
+#about p{
+  color: black;
+ letter-spacing: 3px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+    
+    .navbar{
+        background-color: rgb(250, 230, 205);
+        border-color: black;
+        border-width: 10px;
+        border-radius: 2rem;
+    }
+    .text-center{
+            color: rgb(0, 17, 255);
+    }
+    .text-center h1{
+        font-size: 6rem;
+        font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 100px 0 30px 0;
+    color: rgb(131, 9, 245);
+
+    }
+    .slider-area h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 100px 0 30px 0;
+    color: aliceblue;
+}
+.slider-area p{
+    font-size: 3rem;
+    
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0px;
+    padding: 2.5rem;
+    background: rgb(10, 10, 10);
+}
+.item{
+    animation: animate 25s alternate linear infinite;
+}
+.container:hover .item{
+    animation-play-state: paused;
+}
+@keyframes animate{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-1100px,0,0);
+    }
+}
+@media(max-width:767px){
+    .slider-area h2{
+        font-size: 30px;
+    }
+    .wrapper {
+        width: 95%;
+        border-radius: 0;
+        padding: 0;
+    }
+}
+</style>    
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <img src="img1.webp" width="80" height="50">
+            <a class="navbar-brand text-dark" href="#"><b>Butterfly Theme Park</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true">
+              <span class="navbar-tollger-icon"></span>  
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                        <a class="nav-link active text-dark" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#discover">Discover</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link active text-dark" href="#contact">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="text-center">
+        <h1>Welcome to our Park</h1>
+        <p class="lead text-black">Have a peacefull day</p>
+    </div>
+    </section>
+    <section id="aboutus"> 
+        <div class="container-fluid"> 
+          <div class="row">
+      
+        <div class=" col-lg-6 col-md-6 col-12 ">
+          <img src="bff.jfif" class="img-fluid" >
+        </div>
+      
+      
+        <div class="col-lg-6 col-md-6 col-12 ">
+            <h1>ABOUT US </h1>
+            <p>Butterfly Park in Sector 26,Chandigarh brings a touch of colour,the park is spread over an area of 7 acres with a meticulous landscaping. It offers a tranquil haven of peace and nature's wonders,as multi-coloured butterflies flit all around. </p>
+        </div>
+      
+      </div>
+      </div> </section>
+    <section id="review">
+    <div class="slider-area">
+        <h2 style="color:dark purple(0, 0, 0);">PLACES TO VISIT</h2>
+        <div class="wrapper">
+            <div class="item"><img alt="" src="bf4.jfif"></div>
+            <div class="item"><img alt="" src="bf3.jfif"></div>
+            <div class="item"><img alt="" src="bf2.jfif"></div>
+            <div class="item"><img alt="" src="bf1.jfif"></div>
+            <div class="item"><img alt="" src="bf.jfif"></div>
+        </div>
+    </div>
+</section>
+<section id="discover" class="py-5">
+    <div class="container">
+       <div class="row text-center">
+<h2>Our Overview</h2>
+<p class="lead">Discover peacefull place with peacefull mind.</p>
+<div class="row mt-4">
+<div class="col-md-4">
+<div class="card">
+<img src="img3.jpg" class="card-img-top" alt="Service 1">
+<div class="card-body">
+<h5 class="card-title">Blissfull mind</h5>
+<p class="card-text">Streesfree adventure.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<img src="img2.jpg" class="card-img-top" alt="Service 2">
+<div class="card-body">
+<h5 class="card-title">Nature love</h5>
+<p class="card-text">Spread your wings and fly.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+    <div class="card">
+    <img src="img6.jfif" class="card-img-top" alt="Service 3">
+    <div class="card-body">
+    <h5 class="card-title">Butterfly bliss</h5>
+    <p class="card-text">Wings of Elegance, Essence of Grace.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+        <img src="img7.jfif" class="card-img-top" alt="Service 4">
+        <div class="card-body">
+        <h5 class="card-title">Radiant rainbows</h5>
+        <p class="card-text">Embrace the Beauty of Transformation.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="img8.jfif" class="card-img-top" alt="Service 5">
+            <div class="card-body">
+            <h5 class="card-title">Charm Butterfly</h5>
+            <p class="card-text">Don't wait for your wings, fight for them.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="img10.jfif" class="card-img-top" alt="Service 6">
+                <div class="card-body">
+                <h5 class="card-title">butterfly vibes</h5>
+                <p class="card-text">Butterfly Melodies, Harmonious Vibes.</p>
+                </div>
+                </div>
+                </div>
+                
+</section>
+<section>
+<section id="contact" class="py-5 bg-white">
+<div class="container">
+<div class="row text-center">
+<h2>FeedBack</h2>
+</div>
+<form id="feedbacksForm" class="needs-validation" novalidate>
+<div class="mb-3">
+<label for="name" class="form-label">Full Name</label>
+<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+<div class="invalid-feedback">Please enter your name.</div>
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+<div class="invalid-feedback">Please enter a valid email.</div>
+</div>
+<div class="mb-3">
+<label for="rating" class="form-label">Rating</label>
+<input type="rating" class="form-control" id="rating" required>
+<div class="invalid-feedback">Give Star Rating.</div>
+</div>
+<button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+</section>
+<footer  class="big-info text-black text-center py-3">
+    <p>CopyRight@ramyasweatha.in 2024</p>
+    </footer>
+</footer>
+</body>
+</html>
